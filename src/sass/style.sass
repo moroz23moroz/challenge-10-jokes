@@ -7,39 +7,30 @@
 @import 'blocks/main'
 @import 'blocks/footer'
 
-
-
 html,
 body
     height: 100%
 
-body 
+body
     margin: 0
+    padding: 20px
     display: flex
     flex-direction: column
-    // background: $dark-color
-    // font-family: $lato
-    // color: $main-color
-    font-size: 16px
-    width: 100%
-    margin: 0
-    padding: 0
-    min-height: 100vh
+    align-items: center
+    justify-content: center
+    background: #686de0
+    font-family: $arsenal, sans-serif
+    height: 100vh
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    &.locked 
+    &.locked
         overflow: hidden
-    @include sm 
-        font-size: 16px
-    
 
-
-* 
+*
     box-sizing: border-box
     margin: 0
 
-
-html 
+html
     scroll-behavior: smooth
 
 .wrapper
@@ -49,24 +40,25 @@ html
     flex-direction: column
     min-height: 100%
 
-header 
+header
     padding: 0
 
 main
     flex-grow: 1
-
 
 button
     padding: 0
     background-color: transparent
     border: none
 
-h1, h2, h3, h4 
+h1, h2, h3, h4
     margin: 0
     font-weight: normal
+    opacity: 0.5
+    letter-spacing: 2px
 
 img
-    width: auto 
+    width: auto
     max-width: 100%
     height: auto
 
@@ -87,38 +79,12 @@ li
 
 a
     text-decoration: none
-    
-.container 
-    max-width: 1110px
-    margin: 0 auto
-    padding: 0 20px
-    @media(max-width: 576px) 
-        padding: 0 16px
 
-   
-.section-title
-    // font-family: $haus
-    font-size: 75px
-    line-height: 120%
-    // @include md
-    //     font-size: 75px
-    //     line-height: 110%
-    // @include sm
-    //     font-size: 60px
-    // @include xs
-    //     font-size: 45px
-    // @include xxs
-    //     font-size: 28px
-    
-
-
-
-
-
-
-
-
-
-
-
-
+.container
+    background-color: whitesmoke
+    border-radius: 10px
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0, 0, 0, 0.1)
+    padding: 50px 20px
+    text-align: center
+    max-width: 100%
+    width: 800px
